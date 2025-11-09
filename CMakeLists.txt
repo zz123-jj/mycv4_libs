@@ -4,7 +4,8 @@ project(Myopencv4)
 
 find_package(OpenCV REQUIRED)
 add_library(mylib src/drawing.cpp
-                 src/disp.cpp)
+                 src/disp.cpp
+                 src/channel_adjust.cpp)
 target_include_directories(mylib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 target_link_libraries(mylib ${OpenCV_LIBS})
 
